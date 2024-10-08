@@ -16,7 +16,7 @@ public class NodeBal { //O(log n)
         }
         left = height(root.left);
         right = height(root.right);
-        return (Math.abs(left - right) > 1)
+        return (Math.abs(left - right) <= 1)
     }
     public int height(Node curr){
         if(curr == null){
